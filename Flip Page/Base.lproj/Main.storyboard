@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Flip_Page" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Flip Page View Controller-->
+        <scene sceneID="Lgs-Lq-8ty">
+            <objects>
+                <viewController storyboardIdentifier="flipPage" id="XRf-EG-osL" customClass="FlipPageViewController" customModule="Flip_Page" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eio-gY-fuI"/>
+                        <viewControllerLayoutGuide type="bottom" id="eGe-xb-XWs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Au8-Ua-NQ5">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1l-gq-j4R">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="300"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.79215686269999996" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="J1l-gq-j4R" firstAttribute="height" secondItem="Au8-Ua-NQ5" secondAttribute="height" id="5l9-io-clQ"/>
+                            <constraint firstItem="J1l-gq-j4R" firstAttribute="centerY" secondItem="Au8-Ua-NQ5" secondAttribute="centerY" id="Asr-X3-CmC"/>
+                            <constraint firstItem="J1l-gq-j4R" firstAttribute="width" secondItem="Au8-Ua-NQ5" secondAttribute="width" id="dpw-FF-43o"/>
+                            <constraint firstItem="J1l-gq-j4R" firstAttribute="centerX" secondItem="Au8-Ua-NQ5" secondAttribute="centerX" id="fxq-Hn-QaT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="J1l-gq-j4R"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5l9-io-clQ"/>
+                                <exclude reference="Asr-X3-CmC"/>
+                                <exclude reference="dpw-FF-43o"/>
+                                <exclude reference="fxq-Hn-QaT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="J1l-gq-j4R"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5l9-io-clQ"/>
+                                <include reference="Asr-X3-CmC"/>
+                                <include reference="dpw-FF-43o"/>
+                                <include reference="fxq-Hn-QaT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="labelPageNumber" destination="J1l-gq-j4R" id="5fn-bu-j1X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kme-7u-7TV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="303"/>
+        </scene>
+    </scenes>
+</document>
